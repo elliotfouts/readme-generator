@@ -1,10 +1,11 @@
+
 # 1 
 <br>
 View it <a href="8">here</a>.
 
 # Table of Contents 
 - <a href="#description">Description</a>
-- <a href="#installation">installation</a>
+- <a href="#installation">Installation</a>
 - <a href="#usage">Usage</a>
 - <a href="#licensing">Licensing</a>
 - <a href="#contributions">Contributions</a>
@@ -36,4 +37,5 @@ View it <a href="8">here</a>.
 # Questions 
 
 elliotfouts@gmail.com
-google.com  
+google.com    
+    

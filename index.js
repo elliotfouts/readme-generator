@@ -80,45 +80,45 @@ inquirer
 
 function generateReadMe(email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url) {
     var ReadMeContent = `
-    #${title} 
-    <br>
-    View it <a href="${url}">here</a>.
+# ${title} 
+<br>
+View it <a href="${url}">here</a>.
 
-    # Table of Contents 
-    I.      Description
-    II.     Installation
-    III.    Usage
-    IV.     Licensing 
-    V.      Contributions 
-    
-    # Description 
-    
-    ${description}
-    
-    # Installation 
+# Table of Contents 
+- <a href="#description">Description</a>
+- <a href="#installation">Installation</a>
+- <a href="#usage">Usage</a>
+- <a href="#licensing">Licensing</a>
+- <a href="#contributions">Contributions</a>
 
-    ${installation}
+# Description 
 
-    # Usage 
+${description}
 
-    ${usage}
+# Installation 
 
-    # Licensing 
+${installation}
 
-    ${license}
-    
-    # Contributions 
+# Usage 
 
-    ${contributions}
+${usage}
 
-    # Testing 
+# Licensing 
 
-    ${testing}
-    
-    # Questions 
+${license}
 
-    ${email}
-    ${profilePicUrl}  
+# Contributions 
+
+${contributions}
+
+# Testing 
+
+${testing}
+
+# Questions 
+
+elliotfouts@gmail.com
+google.com    
     `
 
     fs.writeFile("README.md", ReadMeContent, () => {});
