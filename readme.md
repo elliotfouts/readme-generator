@@ -1,6 +1,9 @@
 
 # 1 
-<br>
+[![Travis CI](https://travis-ci.org/tterb/yt2mp3.svg?branch=master)](https://travis-ci.org/tterb/yt2mp3)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![GitHub followers](https://img.shields.io/github/followers/elliotfouts.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elliotfouts?tab=followers)
+
 View it <a href="8">here</a>.
 
 # Table of Contents 
@@ -37,5 +40,6 @@ View it <a href="8">here</a>.
 # Questions 
 
 elliotfouts@gmail.com
+<br>
 google.com    
     

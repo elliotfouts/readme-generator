@@ -72,16 +72,19 @@ inquirer
     debugger;
     let gitInfo = getGitInfo(username);
     const {email, profilePicUrl} = gitInfo;
-    generateReadMe(email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url);
+    generateReadMe(username, email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url);
 }).catch((err) => {
     console.log(`error: ${err}`)
 });
 
 
-function generateReadMe(email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url) {
+function generateReadMe(username, email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url) {
     var ReadMeContent = `
 # ${title} 
-<br>
+[![Travis CI](https://travis-ci.org/tterb/yt2mp3.svg?branch=master)](https://travis-ci.org/tterb/yt2mp3)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![GitHub followers](https://img.shields.io/github/followers/${username}.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/${username}?tab=followers)
+
 View it <a href="${url}">here</a>.
 
 # Table of Contents 
@@ -117,7 +120,8 @@ ${testing}
 
 # Questions 
 
-elliotfouts@gmail.com\n
+elliotfouts@gmail.com
+<br>
 google.com    
     `
 
