@@ -3,7 +3,7 @@
 View it <a href="8">here</a>.
 
 # Table of Contents 
-- Description
+- <a href="#description">Description</a>
 - Installation
 - Usage
 - Licensing 
