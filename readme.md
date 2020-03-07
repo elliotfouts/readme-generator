@@ -4,10 +4,10 @@ View it <a href="8">here</a>.
 
 # Table of Contents 
 - <a href="#description">Description</a>
-- Installation
-- Usage
-- Licensing 
-- Contributions 
+- <a href="#installation">installation</a>
+- <a href="#usage">Usage</a>
+- <a href="#licensing">Licensing</a>
+- <a href="#contributions">Contributions</a>
 
 # Description 
 
