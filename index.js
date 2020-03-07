@@ -85,7 +85,7 @@ function generateReadMe(username, email, profilePicUrl, title, description, inst
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![GitHub followers](https://img.shields.io/github/followers/${username}.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/${username}?tab=followers)
 
-View it <a href="${url}">here</a>.
+View project <a href="${url}">here</a>.
 
 # Table of Contents 
 - <a href="#description">Description</a>

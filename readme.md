@@ -1,10 +1,10 @@
 
-# 1 
+# README generator 
 [![Travis CI](https://travis-ci.org/tterb/yt2mp3.svg?branch=master)](https://travis-ci.org/tterb/yt2mp3)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![GitHub followers](https://img.shields.io/github/followers/elliotfouts.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/elliotfouts?tab=followers)
 
-View it <a href="8">here</a>.
+View project <a href="https://elliotfouts.github.io/readme-generator/">here</a>.
 
 # Table of Contents 
 - <a href="#description">Description</a>
@@ -15,27 +15,27 @@ View it <a href="8">here</a>.
 
 # Description 
 
-2
+The readme generator is a command line node.js program that takes input and builds a styled and easy to access readme.md file.
 
 # Installation 
 
-3
+None
 
 # Usage 
 
-4
+Just visit the website!
 
 # Licensing 
 
-5
+None
 
 # Contributions 
 
-6
+Me, Myself, and I
 
 # Testing 
 
-7
+Hopefully I will test with jest soon!
 
 # Questions 
 
