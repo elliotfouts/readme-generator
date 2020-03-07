@@ -1,43 +1,39 @@
+# 1 
+<br>
+View it <a href="8">here</a>.
 
-    #1 
-    
-    <br>
+# Table of Contents 
+- Description
+- Installation
+- Usage
+- Licensing 
+- Contributions 
 
-    View it <a href="8">here</a>.
+# Description 
 
-    # Table of Contents 
-    I.      Description
-    II.     Installation
-    III.    Usage
-    IV.     Licensing 
-    V.      Contributions 
-    
-    # Description 
-    
-    2
-    
-    # Installation 
+2
 
-    3
+# Installation 
 
-    # Usage 
+3
 
-    4
+# Usage 
 
-    # Licensing 
+4
 
-    5
-    
-    # Contributions 
+# Licensing 
 
-    6
+5
 
-    # Testing 
+# Contributions 
 
-    7
-    
-    # Questions 
+6
 
-    elliotfouts@gmail.com
-    google.com  
-    
+# Testing 
+
+7
+
+# Questions 
+
+elliotfouts@gmail.com
+google.com  
