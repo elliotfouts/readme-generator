@@ -2,11 +2,17 @@ let axios = require("axios");
 let inquirer = require("inquirer");
 let fs = require("fs");
 
+
 var inquirerQuestions = [
     {
         name: "username",
         type: "input",
         message: "What is your github username?"
+    },
+    {
+        name: "email",
+        type: "input",
+        message: "What is your email address?"
     },
     {
         name: "title",
@@ -51,28 +57,28 @@ var inquirerQuestions = [
 ];
 
 function getGitInfo(username) {
-    
-    axios
-        // .get(`https://api.github.com/users/${username}/?per_page=100`)
-        // .then((response) => {
-        //     console.log(response)
-        // })
-        gitInfo = {
-            "email": "elliotfouts@gmail.com",
-            "profilePicUrl" : "google.com"
-        }
-        return (gitInfo) ;
+    let profilePicUrl;
+     return axios
+        .get(`https://api.github.com/users/${username}/repos`)
+        .then((response) => {
+            profilePicUrl = response.data[0].owner.avatar_url;
+            return (profilePicUrl);
+        })
+        .catch((err) => {
+            console.log(`Error: invalid Github username`);
+        })
 }
 
 
 inquirer
 .prompt(inquirerQuestions)
-.then((answers) => {
-    const {username, title, description, installation, usage, license, contributions, testing, url} = answers;
+.then(function(answers) {
+    const {username, email, title, description, installation, usage, license, contributions, testing, url} = answers;
     debugger;
-    let gitInfo = getGitInfo(username);
-    const {email, profilePicUrl} = gitInfo;
-    generateReadMe(username, email, profilePicUrl, title, description, installation, usage, license, contributions, testing, url);
+    let profilePicUrl = getGitInfo(username)
+        .then((response) => {
+            generateReadMe(username, email, response, title, description, installation, usage, license, contributions, testing, url);
+        }) 
 }).catch((err) => {
     console.log(`error: ${err}`)
 });
@@ -85,7 +91,7 @@ function generateReadMe(username, email, profilePicUrl, title, description, inst
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 [![GitHub followers](https://img.shields.io/github/followers/${username}.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/${username}?tab=followers)
 
-View project <a href="${url}">here</a>.
+View project <a target="blank" href="${url}">here</a>.
 
 # Table of Contents 
 - <a href="#description">Description</a>
@@ -120,9 +126,10 @@ ${testing}
 
 # Questions 
 
-elliotfouts@gmail.com
+${email}
 <br>
-google.com    
+<img src="${profilePicUrl}"></img> 
+![](screen-recorder.gif)  
     `
 
     fs.writeFile("README.md", ReadMeContent, () => {});
