@@ -15,7 +15,7 @@ As a result of my frusteration, I decided to write a node CLI that would generat
 I used the inquierer npm package for the CLI prompts and fs to actually write to the output files. I utilized axiso to make an http request to the github licensing API to obtain the license so I could automate its generation.
 
 # Usage 
-To use this tool, download the source code and then execute "npm run start" in the main directory
+To use this tool, download the source code and then execute "npm start" in the main directory
 
 
 # Contact
