@@ -4,7 +4,7 @@
 
 
 # README Generator 
-[Deployed]() | [Demonstration]()
+[Demonstration]()
 
 # Description
 I knew that projects were basically useless unless you could share them with other people and a github repo without a README is practically invisible. However, that does not change the fact that they are an absolute pain in the a** to write!
