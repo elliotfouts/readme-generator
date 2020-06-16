@@ -4,7 +4,7 @@
 
 
 # README Generator 
-[Deployed]() | [Demonstration]()
+[Demonstration]()
 
 # Description
 I knew that projects were basically useless unless you could share them with other people and a github repo without a README is practically invisible. However, that does not change the fact that they are an absolute pain in the a** to write!
@@ -15,7 +15,7 @@ As a result of my frusteration, I decided to write a node CLI that would generat
 I used the inquierer npm package for the CLI prompts and fs to actually write to the output files. I utilized axiso to make an http request to the github licensing API to obtain the license so I could automate its generation.
 
 # Usage 
-To use this tool, download the source code and then execute "npm run start" in the main directory
+To use this tool, download the source code and then execute "npm start" in the main directory
 
 
 # Contact
